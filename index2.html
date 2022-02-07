@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicacion de conversion de Divisas</title>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <body>
+      <div class="card mb-3" style="max-width: 940px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://tse1.mm.bing.net/th?id=OIP.A19Du4_sCubZgZkJroj_kAHaE6&pid=Api&P=0&w=264&h=175"
+              alt="Trendy Pants and Shoes"
+              class="img-fluid rounded-start"
+              style="width: 150%; height: 100%"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-header personalCardheader">
+              <h4 class="card-title">Conversion de Divisas</h4>
+            </div>
+            <div class="card-body">
+              <hr />
+
+              <div class="row">
+                <div class="col">
+                  <!-- Name input -->
+                  <div class="form-outline">
+                    <input
+                      type="number"
+                      id="cantidad"
+                      class="form-control"
+                      step="any"
+                    />
+                    <label class="form-label" for="form8Example3"
+                      >Cantidad</label
+                    >
+                  </div>
+                </div>
+                <div class="col">
+                  <!-- Name input -->
+                  <select class="mdb-select form-control" id="sdivisaOrigen">
+                    <option value="" disabled selected>Divisa</option>
+                    <option value="COP">Peso Colombiano</option>
+                    <option value="USD">Dolar</option>
+                    <option value="EUR">Euro</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <!-- Name input -->
+
+                  <select class="mdb-select form-control" id="sdivisaDestino">
+                    <option value="" disabled selected>Pasar a</option>
+                    <option value="COP">Peso Colombiano</option>
+                    <option value="USD">Dolar</option>
+                    <option value="EUR">Euro</option>
+                  </select>
+                </div>
+
+                <div class="col">
+                  <!-- Name input -->
+                  <button
+                    type="button"
+                    onclick="convertir()"
+                    class="btn btn-primary btn-block mb-3"
+                  >
+                    Calcular
+                  </button>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <!-- Name input -->
+                  <div class="form-outline">
+                    <input
+                      type="text"
+                      id="resultado2"
+                      class="form-control resultado"
+                      disabled
+                    />
+                    <label class="form-label" for="form8Example3"></label>
+                  </div>
+                </div>
+              </div>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"
+      ></script>
+      <script src="script.js"></script>
+    </body>
+  </body>
+</html>

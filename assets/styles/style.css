@@ -1,0 +1,15 @@
+.personalCardheader {
+  background: #0707db;
+  color: white;
+}
+
+input,
+select {
+  margin-bottom: 15px;
+}
+
+.resultado {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: right;
+}
